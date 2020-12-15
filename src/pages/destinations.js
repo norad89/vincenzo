@@ -4,8 +4,8 @@ import SEO from "../components/seo"
 
 const Destinations = () => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Destinations</h1>
+    <SEO title="Destinations" />
+    <h1 className="destinations">Destinations</h1>
   </Layout>
 )
 
