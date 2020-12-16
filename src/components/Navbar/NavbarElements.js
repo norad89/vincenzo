@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { DiScala } from "react-icons/Di"
+import { HiHome } from "react-icons/Hi"
 import { Link } from "gatsby"
 
 export const Nav = styled.nav`
@@ -41,7 +41,7 @@ export const NavLogo = styled(Link)`
   align-items: center;
 `
 
-export const NavIcon = styled(DiScala)`
+export const NavIcon = styled(HiHome)`
   margin: 0 0.5rem 0 2rem;
 `
 export const MobileIcon = styled.div`
