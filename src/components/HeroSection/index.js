@@ -5,11 +5,11 @@ import { Button } from "../ButtonElements"
 function HeroSection() {
   return (
     <div className="hero-container">
-      <h1>Travel More</h1>
-      <p>Plan your next trip today</p>
+      <h1>Vincenzo Raimondi</h1>
+      <p>fotografo</p>
       <div className="hero-btns">
         <Button fontBig big primary>
-          Get Started
+          About
         </Button>
       </div>
     </div>
