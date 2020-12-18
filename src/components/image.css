@@ -8,12 +8,12 @@ html {
   box-sizing: inherit;
 }
 
-.image-container {
+.gallery-container {
   text-align: center;
   margin: 150px 0;
 }
 
-.image-container h1 {
+.gallery-container h1 {
   margin-bottom: 64px;
 }
 
@@ -38,13 +38,14 @@ html {
   }
 }
 
-.wrapper img:hover {
+.image-container:hover img {
+  opacity: 0.3;
   transform: scale(1.1);
   transition: 0.6s all ease !important;
   cursor: pointer;
 }
 
-.wrapper {
+.image-container {
   background-color: #eee;
   opacity: 1;
   display: inline-block;
@@ -65,16 +66,23 @@ html {
   text-align: center;
 }
 
-.wrapper:hover .middle {
+.middle:hover img {
+  opacity: 0.3;
+  transform: scale(1.1);
+  transition: 0.6s all ease !important;
+  cursor: pointer;
+}
+
+.image-container:hover .middle {
   opacity: 1;
 }
 
-.wrapper:hover .image-item {
+.image-container:hover .image-item {
   opacity: 0.3;
 }
 
 .text {
-  background-color: #4caf50;
+  background-color: #4a4c4b;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
