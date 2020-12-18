@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import "./image.css" 
+import "./image.css"
 
 const Image = () => {
   const data = useStaticQuery(graphql`
@@ -16,7 +16,7 @@ const Image = () => {
           node {
             base
             childImageSharp {
-              fluid(maxHeight: 600, maxWidth: 600) {
+              fluid {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -26,17 +26,25 @@ const Image = () => {
     }
   `)
 
+  const handleClick = props => {
+    return console.log(props.node.base.split(".")[0])
+  }
+
   return (
     <div className="image-container">
       <h1>galleria</h1>
-      <div className="image-grid">
+      <div className="image-masonry">
         {data.allFile.edges.map((image, key) => (
-          <Img
-            key={key}
-            className="image-item"
-            fluid={image.node.childImageSharp.fluid}
-            alt={image.node.base.split(".")[0]}
-          />
+          <div className="wrapper" key={key} onClick={() => handleClick(image)}>
+            <Img
+              className="image-item"
+              fluid={image.node.childImageSharp.fluid}
+              alt={image.node.base.split(".")[0]}
+            />
+            <div className="middle">
+              <div className="text">{image.node.base.split(".")[0]}</div>
+            </div>
+          </div>
         ))}
       </div>
     </div>
