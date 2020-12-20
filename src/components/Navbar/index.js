@@ -45,7 +45,7 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/images">Galleria</NavLinks>
+                <NavLinks to="/gallery">Galleria</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/colors">Colore</NavLinks>
