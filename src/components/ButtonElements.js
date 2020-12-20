@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? "#FF4040" : "#0467FB")};
+  background: ${({ primary }) => (primary ? "white" : "#4a4c4b")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "16px 64px" : "10 px 20px")};
-  color: #fff;
+  color: black;
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
@@ -14,7 +14,8 @@ export const Button = styled.button`
 
   &:hover {
     transition: all 0.3s ease-out;
-    background: ${({ primary }) => (primary ? "#0467FB" : "#FF4040")};
+    background: ${({ primary }) => (primary ? "#4a4c4b" : "white")};
+    color: white
   }
 
   @media screen and (max-width: 960px) {
