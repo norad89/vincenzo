@@ -2,7 +2,7 @@ import React from "react"
 import "./HeroSection.css"
 import { Button } from "../ButtonElements"
 
-function HeroSection() {
+export default function HeroSection() {
   return (
     <div className="hero-container">
       <h1>Vincenzo Raimondi</h1>
@@ -16,4 +16,4 @@ function HeroSection() {
   )
 }
 
-export default HeroSection
+

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { useStaticQuery, graphql, navigate } from "gatsby"
 import Img from "gatsby-image"
 import "./image.css"
@@ -24,11 +24,26 @@ const Image = () => {
         }
       }
     }
-  `)
+  `)  
 
   const handleClick = props => {
-    const name = props.node.base.split(".")[0]
-    navigate("/gallery", { state: { name } })
+    const name = props.node.base.split(".")[0];
+    if (name === "alberi") {const id = "gallery/trees";
+    navigate(`/${id}`)};
+    if (name === "corsa") {const id = "gallery/runners";
+    navigate(`/${id}`)}
+    if (name === "fotografi") {const id = "gallery/photographers";
+    navigate(`/${id}`)}
+    if (name === "fumatori") {const id = "gallery/smokers";
+    navigate(`/${id}`)}
+    if (name === "infanzia") {const id = "gallery/childhood";
+    navigate(`/${id}`)}
+    if (name === "lavoro") {const id = "gallery/workers";
+    navigate(`/${id}`)}
+    if (name === "musica") {const id = "gallery/music";
+    navigate(`/${id}`)}
+    if (name === "nudi") {const id = "gallery/nudes";
+    navigate(`/${id}`)}
   }
 
   return (
