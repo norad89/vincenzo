@@ -1,15 +1,15 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import "./image.css"
+import "../image.css"
 
-const ImageColors = () => {
+const ImageTrees = () => {
   const data = useStaticQuery(graphql`
     query {
       allFile(
         filter: {
           extension: { regex: "/(jpg)|(png)|(jpeg)/" }
-          relativeDirectory: { regex: "/colore/" }
+          relativeDirectory: { regex: "/alberi/" }
         }
       ) {
         edges {
@@ -32,6 +32,7 @@ const ImageColors = () => {
 
   return (
     <div className="gallery-container">
+      <h1>alberi</h1>
       <div className="image-masonry">
         {data.allFile.edges.map((image, key) => (
           <div
@@ -44,6 +45,7 @@ const ImageColors = () => {
               fluid={image.node.childImageSharp.fluid}
               alt={image.node.base.split(".")[0]}
             />
+
           </div>
         ))}
       </div>
@@ -51,4 +53,4 @@ const ImageColors = () => {
   )
 }
 
-export default ImageColors
+export default ImageTrees
