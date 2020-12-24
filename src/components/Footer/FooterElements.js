@@ -45,15 +45,13 @@ export const SocialIcon = styled(GiPhotoCamera)`
 
 export const WebsiteRights = styled.small`
   color: #fff;
-  
-  font-family: "Ubuntu", sans-serif;
 `
 
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 64px;
 `
 
 export const SocialIconLink = styled.a`
