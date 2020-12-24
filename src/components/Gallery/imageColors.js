@@ -32,6 +32,7 @@ const ImageColors = () => {
 
   return (
     <div className="gallery-container">
+      <h1>colore</h1>
       <div className="image-masonry">
         {data.allFile.edges.map((image, key) => (
           <div

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { HiHome } from "react-icons/Hi"
+import { GiPhotoCamera } from "react-icons/gi"
 import { Link } from "gatsby"
 
 export const Nav = styled.nav`
@@ -11,7 +11,8 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -36,12 +37,13 @@ export const NavLogo = styled(Link)`
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
 `
 
-export const NavIcon = styled(HiHome)`
+export const NavIcon = styled(GiPhotoCamera)`
+  font-size: 32px;
   margin: 0 0.5rem 0 2rem;
 `
 export const MobileIcon = styled.div`
@@ -91,7 +93,6 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
-  font-family: "Ubuntu", sans-serif;
 
   @media screen and (max-width: 960px) {
     text-align: center;
