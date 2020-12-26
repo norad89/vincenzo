@@ -16,7 +16,12 @@ const Navbar = () => {
   const [click, setClick] = useState(false)
   const [scroll, setScroll] = useState(false)
 
-  const handleClick = () => setClick(!click)
+  const handleClick = () => {setClick(!click);
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });}
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -48,7 +53,7 @@ const Navbar = () => {
                 <NavLinks to="/">home page</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/gallery/colors">colore</NavLinks>
+                <NavLinks to="/colore">colore</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/about">about</NavLinks>
