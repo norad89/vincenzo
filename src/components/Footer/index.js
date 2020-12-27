@@ -2,9 +2,6 @@ import React from "react"
 import {
   FaFacebook,
   FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaYoutube,
 } from "react-icons/fa"
 import {
   FooterContainer,
@@ -24,24 +21,15 @@ const Footer = () => {
         <SocialMediaWrap>
           <SocialLogo to="/">
             <SocialIcon />
-            EXPLORE
+            VR
           </SocialLogo>
-          <WebsiteRights>EXPLORE © {new Date().getFullYear()}</WebsiteRights>
+          <WebsiteRights>VICENZO RAIMONDI © {new Date().getFullYear()}</WebsiteRights>
           <SocialIcons>
-            <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+            <SocialIconLink href="https://www.facebook.com/vincenzo.raimondi.1829" target="_blank" aria-label="Facebook">
               <FaFacebook />
             </SocialIconLink>
-            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+            <SocialIconLink href="https://www.instagram.com/vincenzo.raimondi.1829" target="_blank" aria-label="Instagram">
               <FaInstagram />
-            </SocialIconLink>
-            <SocialIconLink href="/" target="_blank" aria-label="Youtube">
-              <FaYoutube />
-            </SocialIconLink>
-            <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-              <FaTwitter />
-            </SocialIconLink>
-            <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
-              <FaLinkedin />
             </SocialIconLink>
           </SocialIcons>
         </SocialMediaWrap>

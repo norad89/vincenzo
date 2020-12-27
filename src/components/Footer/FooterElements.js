@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { DiScala } from "react-icons/di"
+import { GiPhotoCamera } from "react-icons/gi"
 
 export const FooterContainer = styled.div`
-  background-color: #101522;
+  background-color: #4a4c4b;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,24 +36,23 @@ export const SocialLogo = styled(Link)`
   font-size: 2rem;
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
 `
 
-export const SocialIcon = styled(DiScala)`
+export const SocialIcon = styled(GiPhotoCamera)`
   margin-right: 10px;
 `
 
 export const WebsiteRights = styled.small`
+  margin-top: 5px;
+  margin-bottom: 5px;
   color: #fff;
-  margin-bottom: 16px;
-  font-family: "Ubuntu", sans-serif;
 `
 
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 64px;
 `
 
 export const SocialIconLink = styled.a`
