@@ -36,7 +36,6 @@ export const SocialLogo = styled(Link)`
   font-size: 2rem;
   display: flex;
   align-items: center;
-
 `
 
 export const SocialIcon = styled(GiPhotoCamera)`
@@ -44,6 +43,8 @@ export const SocialIcon = styled(GiPhotoCamera)`
 `
 
 export const WebsiteRights = styled.small`
+  margin-top: 5px;
+  margin-bottom: 5px;
   color: #fff;
 `
 

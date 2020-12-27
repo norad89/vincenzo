@@ -25,10 +25,10 @@ const Footer = () => {
           </SocialLogo>
           <WebsiteRights>VICENZO RAIMONDI © {new Date().getFullYear()}</WebsiteRights>
           <SocialIcons>
-            <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+            <SocialIconLink href="https://www.facebook.com/vincenzo.raimondi.1829" target="_blank" aria-label="Facebook">
               <FaFacebook />
             </SocialIconLink>
-            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+            <SocialIconLink href="https://www.instagram.com/vincenzo.raimondi.1829" target="_blank" aria-label="Instagram">
               <FaInstagram />
             </SocialIconLink>
           </SocialIcons>
