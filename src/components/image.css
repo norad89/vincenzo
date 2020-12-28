@@ -19,6 +19,21 @@ html {
   margin-bottom: 64px;
 }
 
+.about-container h1 {
+  margin: 150px 150px 150px 64px;
+  margin-bottom: 64px;
+  text-align: center;
+  color: black;
+  font-size: 32px
+}
+
+.about-container p {
+  margin: 64px 150px 150px 150px;
+  text-align: justify;
+  color: black;
+  font-size: 24px
+}
+
 .image-masonry {
   column-count: 3;
   column-gap: 1.5em;
