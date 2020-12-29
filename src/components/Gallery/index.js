@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react"
+import React, { useState, Fragment } from "react"
 import Img from "gatsby-image"
 import "../image.css"
 import Lightbox from "react-image-lightbox"
@@ -23,9 +23,12 @@ const ImageGallery = props => {
         <div className="image-masonry">
           {dataGallery.map((image, key) => (
             <div
-              className="image-container"
-              key={key}
-              onClick={() => handleClick(image, key)}
+            role="button"
+            className="image-container"
+            key={key}
+            onClick={() => handleClick(image)}
+            onKeyDown={() => handleClick(image)}
+            tabIndex={key}
             >
               <Img
                 className="image-item"

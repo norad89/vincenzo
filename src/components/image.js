@@ -37,16 +37,25 @@ const Image = () => {
       <div className="image-masonry">
         {data.allFile.edges.map((image, key) => (
           <div
+            role="button"
             className="image-container"
             key={key}
             onClick={() => handleClick(image)}
+            onKeyDown={() => handleClick(image)}
+            tabIndex={key}
           >
             <Img
               className="image-item"
               fluid={image.node.childImageSharp.fluid}
               alt={image.node.base.split(".")[0]}
             />
-            <div className="middle" onClick={() => handleClick(image)}>
+            <div
+              role="button"
+              className="middle"
+              onClick={() => handleClick(image)}
+              onKeyDown={() => handleClick(image)}
+              tabIndex={key}
+            >
               <div className="text">{image.node.base.split(".")[0]}</div>
             </div>
           </div>

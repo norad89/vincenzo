@@ -11,14 +11,14 @@ const About = () => (
       style={{ backgroundImage: `url(${about})` }}
     ></div>
     <div className="about-container">
-      <h1>about</h1>
+      <h1>il fotografo</h1>
       <p>
-        Vincenzo Raimondi si è laureato a Padova in Psicologia del lavoro con
+        Vincenzo Raimondi si laurea a Padova in Psicologia del lavoro con
         una tesi dal titolo: "La creatività nella fotografia pubblicitaria,
         prospettive e metodi". Primo lavoro è stato dirigere, per oltre cinque
-        anni, una gloriosa tipografia di Arzignano. Nel 1982 ha frequentato i
+        anni, una gloriosa tipografia di Arzignano. Nel 1982 frequenta i
         corsi di fotografia pubblicitaria tenutisi a Venezia da Alfredo
-        Pratelli. Nel 1983, passato all’insegnamento, ha ricoperto il ruolo di
+        Pratelli. Nel 1983, passato all’insegnamento, ricopre il ruolo di
         formatore in corsi di aggiornamento nel campo dell'Educazione
         all'Immagine. È stato collaboratore, in qualità di videoperatore, nel
         '93/94, del professore Salvatore Soresi, dell'Università di Padova, in
