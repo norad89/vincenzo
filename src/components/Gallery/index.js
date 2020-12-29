@@ -26,8 +26,8 @@ const ImageGallery = props => {
             role="button"
             className="image-container"
             key={key}
-            onClick={() => handleClick(image)}
-            onKeyDown={() => handleClick(image)}
+            onClick={() => handleClick(image, key)}
+            onKeyDown={() => handleClick(image, key)}
             tabIndex={key}
             >
               <Img
