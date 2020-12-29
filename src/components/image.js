@@ -1,36 +1,68 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, navigate } from "gatsby"
 import Img from "gatsby-image"
-
-/*
- * This component is built using `gatsby-image` to automatically serve optimized
- * images with lazy loading and reduced file sizes. The image is loaded using a
- * `useStaticQuery`, which allows us to load the image from directly within this
- * component, rather than having to pass the image data down from pages.
- *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.dev/gatsby-image
- * - `useStaticQuery`: https://www.gatsbyjs.com/docs/use-static-query/
- */
+import "./image.css"
 
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+      allFile(
+        filter: {
+          extension: { regex: "/(jpg)|(png)|(jpeg)/" }
+          relativeDirectory: { regex: "/cover/" }
+        }
+      ) {
+        edges {
+          node {
+            base
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
     }
   `)
 
-  if (!data?.placeholderImage?.childImageSharp?.fluid) {
-    return <div>Picture not found</div>
+  const handleClick = props => {
+    const name = props.node.base.split(".")[0]
+    navigate(`/${name}`)
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <div className="gallery-container">
+      <h1>raccolta fotografica</h1>
+      <div className="image-masonry">
+        {data.allFile.edges.map((image, key) => (
+          <div
+            role="button"
+            className="image-container"
+            key={key}
+            onClick={() => handleClick(image)}
+            onKeyDown={() => handleClick(image)}
+            tabIndex={key}
+          >
+            <Img
+              className="image-item"
+              fluid={image.node.childImageSharp.fluid}
+              alt={image.node.base.split(".")[0]}
+            />
+            <div
+              role="button"
+              className="middle"
+              onClick={() => handleClick(image)}
+              onKeyDown={() => handleClick(image)}
+              tabIndex={key}
+            >
+              <div className="text">{image.node.base.split(".")[0]}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
 }
 
 export default Image
