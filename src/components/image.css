@@ -21,7 +21,6 @@ html {
 
 .about-container h1 {
   margin: 150px 150px 150px 64px;
-  margin-bottom: 64px;
   text-align: center;
   color: black;
   font-size: 32px
@@ -47,11 +46,23 @@ html {
   .image-masonry {
     column-count: 2;
   }
+  .about-container h1 {
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+  }
+  .about-container p {
+    margin: 64px 48px 48px 48px
+  }
 }
 
 @media screen and (max-width: 768px) {
   .image-masonry {
     column-count: 1;
+  }
+  .about-container p {
+    margin: 48px 32px 32px 32px;
+    font-size: 16px;
   }
 }
 
