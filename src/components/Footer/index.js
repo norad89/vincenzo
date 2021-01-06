@@ -3,6 +3,7 @@ import {
   FaFacebook,
   FaInstagram,
 } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
 import {
   FooterContainer,
   SocialIcon,
@@ -30,6 +31,9 @@ const Footer = () => {
             </SocialIconLink>
             <SocialIconLink href="https://www.instagram.com/vincenzo.raimondi.1829" target="_blank" aria-label="Instagram">
               <FaInstagram />
+            </SocialIconLink>
+            <SocialIconLink href="mailto:raixvin@gmail.com" target="_blank" aria-label="Email">
+              <MdEmail />
             </SocialIconLink>
           </SocialIcons>
         </SocialMediaWrap>

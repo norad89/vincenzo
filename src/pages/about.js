@@ -40,11 +40,11 @@ const About = () => (
         in bianconero" ediz. Il fotografo 1997. Sue immagini sono apparse in
         calendari e cataloghi industriali. Sue fotografie sono state esposte in
         mostre collettive e personali anche fuori dall'Italia. Si è sempre
-        nutrito di immagini. <br/><br/>Mostre recenti: <br/>"a Cavallo" Centro Polis
+        nutrito di immagini. <br/><br/>Mostre recenti: <br/>"a Cavallo", Centro Polis
         Castelbuono 2018 <br/> "Personale", Biblioteca Bedeschi Arzignano 2018 <br/>
-        "L'ultimo mercato bestiame" Biblioteca Bedeschi Arzignano 2019 <br/>
-        "Castelbuono e intorni" Centro Polis Castelbuono 2019 <br/>"Pangea mostra d'
-        arte contemporanea" Montorso 2020
+        "L'ultimo mercato bestiame", Biblioteca Bedeschi Arzignano 2019 <br/>
+        "Castelbuono e intorni", Centro Polis Castelbuono 2019 <br/>"Pangea mostra d'
+        arte contemporanea", Montorso 2020
       </p>
     </div>
   </Layout>

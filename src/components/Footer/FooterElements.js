@@ -53,9 +53,14 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 64px;
+
+  @media screen and (max-width: 820px) {
+    margin-left: -32px;
+  }
 `
 
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+  margin: 5px;
 `
