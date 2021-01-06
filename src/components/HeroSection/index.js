@@ -16,10 +16,10 @@ export default function HeroSection() {
         style={{ backgroundImage: `url(${cover})` }}
       >
         <h1>Vincenzo Raimondi</h1>
-        <p>fotografo</p>
+        <p>anche fotografo</p>
         <div className="hero-btns">
           <Button fontBig big primary onClick={() => handleClick()}>
-            raccolta fotografica
+            immagini
           </Button>
         </div>
       </div>

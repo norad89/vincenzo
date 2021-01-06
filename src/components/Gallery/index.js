@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from "react"
 import Img from "gatsby-image"
+import "./gallery.css"
 import "../image.css"
 import Lightbox from "react-image-lightbox"
 import "react-image-lightbox/style.css"

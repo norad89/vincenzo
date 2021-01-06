@@ -53,7 +53,10 @@ const Navbar = () => {
                 <NavLinks to="/">home page</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/colore">colore</NavLinks>
+                <NavLinks to="/nudi">nudi</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/mostre/cavallo">a cavallo</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/about">about</NavLinks>
